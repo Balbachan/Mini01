@@ -2,21 +2,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    var rows = [GridItem(.fixed(3), spacing: 20)]
-    
     var body: some View {
-        NavigationView {
-            ScrollView(.horizontal) {
-                LazyHGrid(rows: rows, spacing: 20) {
-                    ForEach(eventList, id: \.id) { event in
-                        EventCard(event: event)
-                        
-                    }
+        TabView {
+            InicioView()
+                .tabItem {
+                    Label("Início", systemImage: "house.circle")
                 }
-                .padding()
-            }
-            .navigationTitle(Text("Eventos"))
+            
+            DescriptionView()
+                .tabItem {
+                    Label("Salvos", systemImage: "bookmark.circle")
+                }
         }
+        
     }
 }
 
