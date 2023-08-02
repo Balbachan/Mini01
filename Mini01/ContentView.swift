@@ -1,21 +1,24 @@
-//
-//  ContentView.swift
-//  Mini01
-//
-//  Created by Laura C. Balbachan dos Santos on 01/08/23.
-//
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            InicioView()
+                .tabItem {
+                    Label("Início", systemImage: "house.circle")
+                }
+            
+            SalvoView()
+                .tabItem {
+                    Label("Salvo", systemImage: "bookmark.circle")
+                }
+            
+            StatusView()
+                .tabItem {
+                    Label("Status", systemImage: "person.circle")
+                }
         }
-        .padding()
     }
 }
 
