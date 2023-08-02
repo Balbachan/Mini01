@@ -14,12 +14,17 @@ struct CollectionView: View {
                 NavigationLink {
                     DescriptionView()
                 } label: {
-                    // For Each
-                    RoundedRectangle(cornerRadius: radius)
-                        .foregroundColor(.white)
-                        .frame(width: width, height: height)
+                    VStack {
+                        RoundedRectangle(cornerRadius: radius)
+                            .foregroundColor(.white)
+                            .frame(width: width, height: height)
+                        
+                            Text("Title")
+                    }
                 }
             }
         }
     }
 }
+
+
