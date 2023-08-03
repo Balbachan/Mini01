@@ -1,18 +1,12 @@
-//
-//  InicioView.swift
-//  Mini01
-//
-//  Created by Laura C. Balbachan dos Santos on 02/08/23.
-//
-
 import SwiftUI
 
 struct InicioView: View {
     var body: some View {
         NavigationView {
+            
             ZStack {
                 Color("Light")
-                    .ignoresSafeArea()
+                    .ignoresSafeArea(.container, edges: .top)
                 
                 ScrollView {
                     VStack {
@@ -23,7 +17,11 @@ struct InicioView: View {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
                                         if event.eventType == 1 {
-                                            EventCard(event: event)
+                                            NavigationLink {
+                                                DescriptionView(event: event)
+                                            } label: {
+                                                EventCard(event: event)
+                                            }
                                         }
                                     }
                                 }
@@ -38,7 +36,11 @@ struct InicioView: View {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
                                         if event.eventType == 2 {
-                                            EventCard(event: event)
+                                            NavigationLink {
+                                                DescriptionView(event: event)
+                                            } label: {
+                                                EventCard(event: event)
+                                            }
                                         }
                                     }
                                 }
@@ -54,7 +56,7 @@ struct InicioView: View {
                                     ForEach(eventList, id: \.id) { event in
                                         if event.eventType == 3 {
                                             NavigationLink {
-                                                
+                                                DescriptionView(event: event)
                                             } label: {
                                                 EventCard(event: event)
                                             }

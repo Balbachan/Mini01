@@ -1,10 +1,3 @@
-//
-//  EventModel.swift
-//  Mini01
-//
-//  Created by Laura C. Balbachan dos Santos on 02/08/23.
-//
-
 import Foundation
 
 struct Event: Identifiable {
@@ -21,4 +14,4 @@ var eventList = [Event(title: "Bluey", subtitle: "aaaaa", image: "image1", date:
                  Event(title: "Disco", subtitle: "aaaaa", image: "image2", date: "02/08", location: "Online", eventType: 2),
                  Event(title: "Yellow", subtitle: "aaaaa", image: "image3", date: "02/08", location: "Online", eventType: 2),
                  Event(title: "Bunch", subtitle: "aaaaa", image: "image4", date: "02/08", location: "Online", eventType: 3),
-                 Event(title: "Rosey", subtitle: "aaaaa", image: "image5", date: "02/08", location: "Online", eventType: 3)]
+                 Event(title: "Rosey", subtitle: "aaaaa", image: "image5", date: "02/08", location: "Online", eventType: 1)]

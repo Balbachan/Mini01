@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct ContentView: View {
@@ -9,7 +8,7 @@ struct ContentView: View {
                     Label("Início", systemImage: "house.circle")
                 }
             
-            DescriptionView()
+            SalvoView()
                 .tabItem {
                     Label("Salvos", systemImage: "bookmark.circle")
                 }

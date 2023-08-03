@@ -1,40 +1,27 @@
-//
-//import Foundation
-//import SwiftUI
-//
-//struct SalvoView: View {
-//    let width: CGFloat = 320
-//    let height: CGFloat = 190
-//    let radius: CGFloat = 22
-//    
-//    var body: some View {
-//        GeometryReader { geometry in
-//            NavigationStack {
-//                ZStack {
-//                    Color("AppWhite")
-//                        .edgesIgnoringSafeArea(.top)
-//                    ScrollView {
-//                        RoundedRectangle(cornerRadius: radius)
-//                            .foregroundColor(.white)
-//                            .frame(width: width, height: height)
-//                        
-//                        RoundedRectangle(cornerRadius: radius)
-//                            .foregroundColor(.white)
-//                            .frame(width: width, height: height)
-//                        
-//                        RoundedRectangle(cornerRadius: radius)
-//                            .foregroundColor(.white)
-//                            .frame(width: width, height: height)
-//                        
-//                        RoundedRectangle(cornerRadius: radius)
-//                            .foregroundColor(.white)
-//                            .frame(width: width, height: height)
-//                    }
-//                    .padding()
-//                }
-//                .navigationTitle("Salvo")
-//                .navigationBarTitleDisplayMode(.inline)
-//            }
-//        }
-//    }
-//}
+import SwiftUI
+
+struct SalvoView: View {
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color("Light")
+                    .ignoresSafeArea(.container, edges: .top)
+                
+                ScrollView {
+                    VStack {
+                        Text("a")
+                    }
+                }
+                
+                
+            }
+            .navigationTitle("Salvos")
+        }
+    }
+}
+
+struct SalvoView_Previews: PreviewProvider {
+    static var previews: some View {
+        SalvoView()
+    }
+}
