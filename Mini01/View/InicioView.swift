@@ -16,7 +16,7 @@ struct InicioView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
-                                        if event.eventType == 1 {
+                                        if event.eventType == "p" {
                                             NavigationLink {
                                                 DescriptionView(event: event)
                                             } label: {
@@ -35,7 +35,7 @@ struct InicioView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
-                                        if event.eventType == 2 {
+                                        if event.eventType == "e" {
                                             NavigationLink {
                                                 DescriptionView(event: event)
                                             } label: {
@@ -54,7 +54,7 @@ struct InicioView: View {
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
-                                        if event.eventType == 3 {
+                                        if event.eventType == "c" {
                                             NavigationLink {
                                                 DescriptionView(event: event)
                                             } label: {

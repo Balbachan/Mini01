@@ -11,6 +11,7 @@ struct DescriptionView: View {
                 
                 ScrollView {
                     VStack(alignment: .leading) {
+                        
                         VStack(alignment: .leading) {
                             Image(event.image)
                                 .resizable()
@@ -20,19 +21,39 @@ struct DescriptionView: View {
                             
                         }
                         .frame(width: 340, height: 220)
+                        .padding()
                         
                         
                         VStack(alignment: .leading) {
                             Text(event.title)
                                 .bold()
                                 .font(.title3)
-                            
-                            
                             Text(event.subtitle)
+                                .italic()
+                            
+                            Spacer(minLength: 15)
+                            
+                            HStack {
+                                Image(systemName: "calendar")
+                                Text("Data: \(event.date)")
+                            }
+                            
+                            HStack {
+                                Image(systemName: "pin.fill")
+                                Text("Local: \(event.location)")
+                            }
+                        
+                            Spacer(minLength: 15)
+                            HStack {
+                                Image(systemName: "line.horizontal.3")
+                                Text("Descrição: ")
+                            }
+                            Text(event.description)
                             
                         }
                         .padding()
                     }
+                    .padding()
                 }
             }
         }

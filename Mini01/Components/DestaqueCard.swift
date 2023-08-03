@@ -1,13 +1,30 @@
+//
+//  Destaque.swift
+//  Mini01
+//
+//  Created by Laura C. Balbachan dos Santos on 03/08/23.
+//
+
 import SwiftUI
 
-struct DestaqueView: View {
+struct Destaque: View {
+    var event: Event
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image(event.image)
+                .resizable()
+                .cornerRadius(22)
+                .frame(width: 195)
+                .scaledToFit()
+        }
+        .frame(width: 230, height: 130)
+        .padding()
     }
 }
 
-struct DestaqueView_Previews: PreviewProvider {
+struct Destaque_Previews: PreviewProvider {
     static var previews: some View {
-        DestaqueView()
+        Destaque(event: eventList[0])
     }
 }

@@ -4,7 +4,7 @@ struct EventCard: View {
     var event: Event // argumento
     
     var body: some View{
-        ZStack(alignment: .bottomTrailing) {
+        ZStack(alignment: .topTrailing) {
             ZStack(alignment: .bottomLeading) {
                 Image(event.image)
                     .resizable()
@@ -14,10 +14,12 @@ struct EventCard: View {
                 
                 VStack(alignment: .leading) {
                     Text(event.title)
+                        .font(.caption)
                         .bold()
-                    
+                                            
                     Text(event.subtitle)
                         .font(.caption)
+
                 }
                 .padding()
         
@@ -32,7 +34,6 @@ struct EventCard: View {
                 Image(systemName: "bookmark")
                     .padding(20)
                     .foregroundColor(.accentColor)
-                
             }
         }
     }

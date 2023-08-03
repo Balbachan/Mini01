@@ -12,6 +12,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Salvos", systemImage: "bookmark.circle")
                 }
+            
+            StatusView()
+                .tabItem {
+                    Label("Status", systemImage: "person.circle")
+                }
         }
         
     }
@@ -22,3 +27,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
