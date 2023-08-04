@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct InicioView: View {
-    
+
     var body: some View {
         NavigationView {
             
@@ -14,6 +14,8 @@ struct InicioView: View {
                         // Palestras
                         VStack(alignment: .leading) {
                             Text("Palestras")
+                                .font(.title3)
+                                .bold()
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
@@ -33,6 +35,8 @@ struct InicioView: View {
                         // Eventos
                         VStack(alignment: .leading) {
                             Text("Eventos")
+                                .font(.title3)
+                                .bold()
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
@@ -52,6 +56,8 @@ struct InicioView: View {
                         // Cursos
                         VStack(alignment: .leading) {
                             Text("Cursos")
+                                .font(.title3)
+                                .bold()
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack {
                                     ForEach(eventList, id: \.id) { event in
@@ -72,6 +78,7 @@ struct InicioView: View {
             }
             .navigationTitle(Text("Início"))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

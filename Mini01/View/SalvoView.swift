@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SalvoView: View {
-    
+
     var body: some View {
         NavigationView {
             ZStack(alignment: .center) {
@@ -9,6 +9,8 @@ struct SalvoView: View {
                     .ignoresSafeArea(.container, edges: .top)
                 
                 ScrollView {
+                    Spacer()
+                    
                     VStack(alignment: .center) {
                         ForEach(eventList, id: \.id) { event in
                             if event.isSalvo == true {

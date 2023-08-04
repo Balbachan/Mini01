@@ -14,12 +14,11 @@ struct ContentView: View {
                     Label("Salvos", systemImage: "bookmark.circle")
                 }
             
-            StatusView()
-                .tabItem {
-                    Label("Status", systemImage: "person.circle")
-                }
+//            StatusView()
+//                .tabItem {
+//                    Label("Status", systemImage: "person.circle")
+//                }
         }
-        
     }
 }
 

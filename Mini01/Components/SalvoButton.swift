@@ -3,6 +3,8 @@ import SwiftUI
 struct SalvoButton: View {
     @State var value: Int = 0
     @State var isOn: Bool = false
+    
+    
     var type: IndicatorType = .bookmark
     public var duration: Double = 0.25
     
@@ -48,9 +50,10 @@ struct SalvoButton: View {
         }
     }
     
-    enum IndicatorType {
+
+enum IndicatorType {
         case like, bookmark
-    }
+}
 
 
 struct SalvoButton_Previews: PreviewProvider {

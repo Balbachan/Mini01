@@ -22,7 +22,8 @@
 		19FF1FCE2A7B5CA50009D3C7 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF1FCD2A7B5CA50009D3C7 /* StatusView.swift */; };
 		19FF1FD22A7C3D370009D3C7 /* SalvoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF1FD12A7C3D370009D3C7 /* SalvoCard.swift */; };
 		19FF1FD82A7C86AD0009D3C7 /* SalvoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF1FD72A7C86AD0009D3C7 /* SalvoButton.swift */; };
-		19FF1FDA2A7C892B0009D3C7 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF1FD92A7C892B0009D3C7 /* ButtonController.swift */; };
+		19FF1FDC2A7CEC920009D3C7 /* SalvoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF1FDB2A7CEC920009D3C7 /* SalvoController.swift */; };
+		19FF1FE02A7CFB6F0009D3C7 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FF1FDF2A7CFB6F0009D3C7 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +43,8 @@
 		19FF1FCD2A7B5CA50009D3C7 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		19FF1FD12A7C3D370009D3C7 /* SalvoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalvoCard.swift; sourceTree = "<group>"; };
 		19FF1FD72A7C86AD0009D3C7 /* SalvoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalvoButton.swift; sourceTree = "<group>"; };
-		19FF1FD92A7C892B0009D3C7 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
+		19FF1FDB2A7CEC920009D3C7 /* SalvoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalvoController.swift; sourceTree = "<group>"; };
+		19FF1FDF2A7CFB6F0009D3C7 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				19FF1FBC2A7AFBA20009D3C7 /* Components */,
 				19FF1F882A79A5350009D3C7 /* View */,
 				19FF1F892A79A53F0009D3C7 /* Controller */,
+				19FF1FDF2A7CFB6F0009D3C7 /* Notifications.swift */,
 				19FF1F792A799E350009D3C7 /* Mini01App.swift */,
 				19FF1F7D2A799E360009D3C7 /* Assets.xcassets */,
 				19FF1F9A2A7A8D9E0009D3C7 /* Mini01Data.json */,
@@ -119,7 +122,7 @@
 		19FF1F892A79A53F0009D3C7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				19FF1FD92A7C892B0009D3C7 /* ButtonController.swift */,
+				19FF1FDB2A7CEC920009D3C7 /* SalvoController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,11 +217,12 @@
 				19FF1F7C2A799E350009D3C7 /* ContentView.swift in Sources */,
 				19FF1FCE2A7B5CA50009D3C7 /* StatusView.swift in Sources */,
 				19FF1FC02A7AFC600009D3C7 /* EventModel.swift in Sources */,
+				19FF1FE02A7CFB6F0009D3C7 /* Notifications.swift in Sources */,
 				19FF1F7A2A799E350009D3C7 /* Mini01App.swift in Sources */,
 				19FF1FC62A7B197E0009D3C7 /* SalvoView.swift in Sources */,
 				19FF1FCA2A7B238C0009D3C7 /* DescriptionView.swift in Sources */,
+				19FF1FDC2A7CEC920009D3C7 /* SalvoController.swift in Sources */,
 				19FF1FCC2A7B56EC0009D3C7 /* DestaqueCard.swift in Sources */,
-				19FF1FDA2A7C892B0009D3C7 /* ButtonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

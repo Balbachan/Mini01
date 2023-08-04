@@ -16,7 +16,7 @@ struct DescriptionView: View {
                             Image(event.image)
                                 .resizable()
                                 .cornerRadius(22)
-                                .frame(width: 340)
+                                .frame(width: 340, height: 220)
                                 .scaledToFit()
                             
                         }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EventCard: View {
-    var event: Event // argumento
+    var event: Event 
     
     var body: some View{
         ZStack(alignment: .topTrailing) {
@@ -14,10 +14,12 @@ struct EventCard: View {
                 
                 VStack(alignment: .leading) {
                     Text(event.title)
+                        .multilineTextAlignment(.leading)
                         .font(.caption)
                         .bold()
                                             
                     Text(event.subtitle)
+                        .multilineTextAlignment(.leading)
                         .font(.caption)
 
                 }
@@ -28,7 +30,7 @@ struct EventCard: View {
             
             VStack {
                 Button {
-                    print("Adicionado aos favoritos")
+                    print("aaa")
                 } label: {
                     SalvoButton()
                 }

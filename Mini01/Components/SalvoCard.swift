@@ -14,6 +14,7 @@ struct SalvoCard: View {
                 
                 VStack(alignment: .leading) {
                     Text(event.title)
+                        .multilineTextAlignment(.leading)
                         .font(.caption)
                         .bold()
                     
@@ -26,13 +27,14 @@ struct SalvoCard: View {
             }
             .frame(width: 280, height: 150)
             
-            Button {
-                print("Adicionado aos favoritos")
-            } label: {
-                Image(systemName: "bookmark")
-                    .padding(20)
-                    .foregroundColor(.accentColor)
+            VStack {
+                Button {
+                    print("AA")
+                } label: {
+                    SalvoButton()
+                }
             }
+            .padding()
         }
     }
 }
@@ -40,5 +42,6 @@ struct SalvoCard: View {
 struct SalvoCard_Previews: PreviewProvider {
     static var previews: some View {
         SalvoCard(event: eventList[0])
+
     }
 }
