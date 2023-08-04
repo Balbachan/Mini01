@@ -26,13 +26,14 @@ struct EventCard: View {
             }
             .frame(width: 230, height: 120)
             
-            Button {
-                print("Adicionado aos favoritos")
-            } label: {
-                Image(systemName: "bookmark")
-                    .padding(20)
-                    .foregroundColor(.accentColor)
+            VStack {
+                Button {
+                    print("Adicionado aos favoritos")
+                } label: {
+                    SalvoButton()
+                }
             }
+            .padding()
         }
     }
 }
