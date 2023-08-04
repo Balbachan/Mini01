@@ -5,13 +5,13 @@ struct DescriptionView: View {
     
     var body: some View {
         NavigationView {
+            
             ZStack(alignment: .top) {
                 Color("Light")
                     .ignoresSafeArea(.container, edges: .top)
                 
                 ScrollView {
                     VStack(alignment: .leading) {
-                        
                         VStack(alignment: .leading) {
                             Image(event.image)
                                 .resizable()
@@ -20,16 +20,18 @@ struct DescriptionView: View {
                                 .scaledToFit()
                             
                         }
-                        .frame(width: 340, height: 220)
+                        .frame(width: 320, height: 220)
                         .padding()
                         
-                        
                         VStack(alignment: .leading) {
-                            Text(event.title)
-                                .bold()
-                                .font(.title3)
-                            Text(event.subtitle)
-                                .italic()
+                            HStack {
+                                Text(event.title)
+                                    .bold()
+                                    .font(.title3)
+                            }
+                                Text(event.subtitle)
+                                    .italic()
+                            
                             
                             Spacer(minLength: 15)
                             
@@ -59,6 +61,7 @@ struct DescriptionView: View {
         }
     }
 }
+    
 
 struct DescriptionView_Previews: PreviewProvider {
     static var previews: some View {

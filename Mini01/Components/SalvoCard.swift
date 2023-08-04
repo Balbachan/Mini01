@@ -1,30 +1,30 @@
 import SwiftUI
 
-struct EventCard: View {
-    var event: Event // argumento
+struct SalvoCard: View {
+    var event: Event
     
-    var body: some View{
+    var body: some View {
         ZStack(alignment: .topTrailing) {
             ZStack(alignment: .bottomLeading) {
                 Image(event.image)
                     .resizable()
                     .cornerRadius(22)
-                    .frame(width: 230, height: 120)
+                    .frame(width: 280, height: 150)
                     .scaledToFit()
                 
                 VStack(alignment: .leading) {
                     Text(event.title)
                         .font(.caption)
                         .bold()
-                                            
+                    
                     Text(event.subtitle)
                         .font(.caption)
-
+                    
                 }
                 .padding()
-        
+                
             }
-            .frame(width: 230, height: 120)
+            .frame(width: 280, height: 150)
             
             Button {
                 print("Adicionado aos favoritos")
@@ -37,8 +37,8 @@ struct EventCard: View {
     }
 }
 
-struct EventCard_Previews: PreviewProvider {
+struct SalvoCard_Previews: PreviewProvider {
     static var previews: some View {
-        EventCard(event: eventList[0])
+        SalvoCard(event: eventList[0])
     }
 }
